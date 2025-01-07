@@ -3,3 +3,10 @@
 - run - `npm run dev` 
 - error - if any error occurs than open in incognito mode
   - because some extension modify dom 
+- difference between vite+react and next.js project
+  - vite+react =  it send js bundle to browser and than browser render it 
+    - if we will disable javascript into browser then all content will disappeare
+  - next.js = it send html and css file to browser (server render)
+    - if we will disable javascript into browser then nothing will happen
+- ctrl+sift+p - to open search in inspect mode of browser
+ 
