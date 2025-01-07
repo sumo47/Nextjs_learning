@@ -1,4 +1,5 @@
 - create next app - `npx create-next=app@latest`
+  -TypeScript - No, Tailwind - yes , src/directory - No , App Router - Yes, Turbopack - Yes , import alias - No
   - use `./` for root folder for app name
 - run - `npm run dev` 
 - error - if any error occurs than open in incognito mode
@@ -9,4 +10,5 @@
   - next.js = it send html and css file to browser (server render)
     - if we will disable javascript into browser then nothing will happen
 - ctrl+sift+p - to open search in inspect mode of browser
- 
+- page file of app folder runs on server by default
+- use `use client` code in top of component to run it on client side 
