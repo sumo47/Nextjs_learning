@@ -12,3 +12,12 @@
 - ctrl+sift+p - to open search in inspect mode of browser
 - page file of app folder runs on server by default
 - use `use client` code in top of component to run it on client side 
+- next js uses Turbopack bundler
+- Routing - 
+  - we use folder to route page 
+  - use page.js file name inside folder
+     - localhost:3000/about =  about/page.js
+     - localhost:3000/services = services/page
+- Nested Routing
+  - use folder inside folder and page.js inside it
+  - localhost:3000/services/seo = services/seo/page.js
