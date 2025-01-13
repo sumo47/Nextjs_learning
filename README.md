@@ -16,8 +16,24 @@
 - Routing - 
   - we use folder to route page 
   - use page.js file name inside folder
-     - localhost:3000/about =  about/page.js
+  - it is case sensitive
+     - localhost:3000/about =  about/page.js  !=   localhost:3000/About =  About/page.js 
      - localhost:3000/services = services/page
 - Nested Routing
   - use folder inside folder and page.js inside it
   - localhost:3000/services/seo = services/seo/page.js
+- Dynamic route
+  - folder name sould be wrapped inside square bracket [slug]
+  - now inside square bracket page destructure params from props
+    ```
+    export default function page({params}) {
+     console.log(params)
+     const { blogID } = params;
+     return (
+       <div>
+           <h1>blogID = {blogID}</h1>
+       </div>
+     )
+    }
+    ```
+   - localhost:3000/slug/anything will capture inside props.params.slud = anything
